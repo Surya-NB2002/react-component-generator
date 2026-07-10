@@ -37,7 +37,7 @@ export function AuthDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>
+          <DialogTitle className="font-serif font-medium">
             {mode === "signin" ? "Welcome back" : "Create an account"}
           </DialogTitle>
           <DialogDescription>
