@@ -15,19 +15,19 @@ Run at **medium effort/depth by default** — enough to explain each area correc
 
 ## Reference material
 
-Detailed, pre-indexed notes for each area live in `.claude/references/`, numbered in the recommended learning order. Read the relevant file(s) before explaining that area to the user, and cite concrete file paths from them (not vague summaries) — these references already link related areas together with `[[name]]`-style cross-references:
+Detailed, pre-indexed notes for each area live in this skill's own `references/` folder, numbered in the recommended learning order. Read the relevant file(s) before explaining that area to the user, and cite concrete file paths from them (not vague summaries) — these references already link related areas together with `[[name]]`-style cross-references:
 
-1. `.claude/references/01-setup-and-config.md` — package.json scripts, Next/TS/Vitest config, Prisma schema, env handling
-2. `.claude/references/02-auth-and-sessions.md` — JWT session auth, middleware, server actions, `useAuth`
-3. `.claude/references/03-data-model-and-persistence.md` — Prisma models, project CRUD server actions
-4. `.claude/references/04-app-shell-and-routing.md` — `src/app` routes, layout, `main-content.tsx` provider composition
-5. `.claude/references/05-anonymous-work-tracking.md` — sessionStorage work tracker, post-sign-in migration
-6. `.claude/references/06-chat-context-and-ui.md` — `ChatProvider`, chat UI components
-7. `.claude/references/07-virtual-file-system.md` — `VirtualFileSystem` class and its React context wrapper (the core abstraction)
-8. `.claude/references/08-api-route-and-ai-tools.md` — `/api/chat` route, mock vs. real model provider, the two AI tools
-9. `.claude/references/09-live-preview-jsx-transform.md` — Babel-in-browser transform, import map, iframe preview
-10. `.claude/references/10-file-tree-and-editor-ui.md` — file tree and Monaco editor components
-11. `.claude/references/11-testing-conventions.md` — Vitest setup and co-located `__tests__` convention
+1. `references/01-setup-and-config.md` — package.json scripts, Next/TS/Vitest config, Prisma schema, env handling
+2. `references/02-auth-and-sessions.md` — JWT session auth, middleware, server actions, `useAuth`
+3. `references/03-data-model-and-persistence.md` — Prisma models, project CRUD server actions
+4. `references/04-app-shell-and-routing.md` — `src/app` routes, layout, `main-content.tsx` provider composition
+5. `references/05-anonymous-work-tracking.md` — sessionStorage work tracker, post-sign-in migration
+6. `references/06-chat-context-and-ui.md` — `ChatProvider`, chat UI components
+7. `references/07-virtual-file-system.md` — `VirtualFileSystem` class and its React context wrapper (the core abstraction)
+8. `references/08-api-route-and-ai-tools.md` — `/api/chat` route, mock vs. real model provider, the two AI tools
+9. `references/09-live-preview-jsx-transform.md` — Babel-in-browser transform, import map, iframe preview
+10. `references/10-file-tree-and-editor-ui.md` — file tree and Monaco editor components
+11. `references/11-testing-conventions.md` — Vitest setup and co-located `__tests__` convention
 
 This order is intentional: each area builds on the previous one (e.g. you can't understand the chat tool loop in area 8 without first understanding the virtual file system in area 7). Preserve this order when giving a full walkthrough; only skip ahead if the user specifically asks about one area.
 
